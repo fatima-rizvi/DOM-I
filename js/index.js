@@ -62,7 +62,7 @@ sixthLink.textContent = "Contact";
 
 // Fill in the h1 element in the cta section
 const headOne = document.querySelector('h1');
-headOne.textContent = 'DOM<br> Is<br> Awesome';
+headOne.innerHTML = 'DOM<br> Is<br> Awesome';
 
 // Fill in the button text in the cta section
 const ctaButton = document.querySelector('button');
@@ -128,7 +128,7 @@ pTwoContact = contact.querySelector('p:nth-of-type(2)');
 pThreeContact = contact.querySelector('p:nth-of-type(3)');
 //Fill out contact section
 h4Contact.textContent = 'Contact';
-pOneContact.textContent = '123 Way 456 Street<br>Somewhere, USA';
+pOneContact.innerHTML = '123 Way 456 Street<br>Somewhere, USA';
 pTwoContact.textContent = '1 (888) 888-8888';
 pThreeContact.textContent = 'sales@greatidea.io';
 
@@ -138,9 +138,24 @@ const footer = document.querySelector('footer');
 const pFooter = footer.querySelector('p');
 pFooter.textContent = 'Copyright Great Idea! 2018';
 
+
+// Add new content
+
+//Add links to the nav system
+
+// .appendChild()
+const nav = document.querySelector('nav');
+let a = document.createElement('a');
+a.textContent = "Gallery";
+nav.appendChild(a);
+// .prepend()
+let a2 = document.createElement('a');
+a2.textContent = "Home";
+nav.prepend(a2);
+
 //Change nav text to green
 const allLinks = document.querySelectorAll('a');
-console.log(allLinks);
+//console.log(allLinks);
 for (let i = 0; i < allLinks.length; i++){
   allLinks[i].style.color = 'green';
 };
