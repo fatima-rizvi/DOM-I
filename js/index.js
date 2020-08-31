@@ -60,9 +60,9 @@ fifthLink.textContent = "About";
 const sixthLink = fifthLink.nextElementSibling;
 sixthLink.textContent = "Contact";
 
-// //Fill in the h1 element in the cta section
-// const headOne = document.querySelector('h1');
-// headOne.textContent = 'DOM<br> Is<br> Awesome';
+// Fill in the h1 element in the cta section
+const headOne = document.querySelector('h1');
+headOne.textContent = 'DOM<br> Is<br> Awesome';
 
 // Fill in the button text in the cta section
 const ctaButton = document.querySelector('button');
@@ -116,4 +116,24 @@ pThirdCard.textContent = 'Services content elementum magna eros, ac posuere elvi
 pFourthCard.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 pFifthCard.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
+//Update middle-img
+const middleImage = document.querySelector('#middle-img');
+middleImage.setAttribute('src', 'img/mid-page-accent.jpg');
 
+//Separate the contact section
+const contact = document.querySelector('.contact');
+h4Contact = contact.querySelector('h4');
+pOneContact = contact.querySelector('p:nth-of-type(1)');
+pTwoContact = contact.querySelector('p:nth-of-type(2)');
+pThreeContact = contact.querySelector('p:nth-of-type(3)');
+//Fill out contact section
+h4Contact.textContent = 'Contact';
+pOneContact.textContent = '123 Way 456 Street<br>Somewhere, USA';
+pTwoContact.textContent = '1 (888) 888-8888';
+pThreeContact.textContent = 'sales@greatidea.io';
+
+
+//Separate footer and fill in p with copyright
+const footer = document.querySelector('footer');
+const pFooter = footer.querySelector('p');
+pFooter.textContent = 'Copyright Great Idea! 2018';
