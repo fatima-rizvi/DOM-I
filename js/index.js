@@ -137,3 +137,10 @@ pThreeContact.textContent = 'sales@greatidea.io';
 const footer = document.querySelector('footer');
 const pFooter = footer.querySelector('p');
 pFooter.textContent = 'Copyright Great Idea! 2018';
+
+//Change nav text to green
+const allLinks = document.querySelectorAll('a');
+console.log(allLinks);
+for (let i = 0; i < allLinks.length; i++){
+  allLinks[i].style.color = 'green';
+};
