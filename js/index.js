@@ -167,3 +167,31 @@ for (let i = 0; i < allLinks.length; i++){
 ctaButton.style.backgroundColor = 'green';
 ctaButton.style.color = 'white';
 ctaButton.style.borderRadius = '15px';
+
+//Mess with some other stuff
+contact.style.color = "maroon";
+headOne.style.color = "purple";
+headOne.style.textDecoration = "underline";
+
+// make the button and flip the colors
+const newButton = document.createElement('button');
+newButton.textContent = ' Click me :) ';
+nav.appendChild(newButton);
+newButton.style.backgroundColor = "green";
+newButton.style.color = "white";
+newButton.style.borderRadius = '15px';
+const body = document.querySelector('body');
+function change () {
+  body.style.backgroundColor = "black";
+  body.style.color = "white";
+  contact.style.color = "#ccff00";
+  for (let i = 0; i < allLinks.length; i++){
+    allLinks[i].style.color = '#90EE90';
+  };
+  ctaButton.style.backgroundColor = '#90EE90';
+  ctaButton.style.color = 'navy';
+  newButton.style.backgroundColor = "#90EE90";
+  newButton.style.color = "navy";
+  headOne.style.color = "#ccff00";
+};
+newButton.addEventListener('click', change);
