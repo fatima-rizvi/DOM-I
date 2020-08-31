@@ -159,3 +159,11 @@ const allLinks = document.querySelectorAll('a');
 for (let i = 0; i < allLinks.length; i++){
   allLinks[i].style.color = 'green';
 };
+
+//Stretch
+// Update styles for fun!
+
+//Mess with the cta button
+ctaButton.style.backgroundColor = 'green';
+ctaButton.style.color = 'white';
+ctaButton.style.borderRadius = '15px';
