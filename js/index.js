@@ -40,3 +40,80 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Label the nav links
+const firstLink = document.querySelector('a:nth-of-type(1)');
+firstLink.textContent = "Services";
+
+const secondLink = firstLink.nextElementSibling;
+secondLink.textContent = "Product";
+
+const thirdLink = secondLink.nextElementSibling;
+thirdLink.textContent = "Vision";
+
+const fourthLink = thirdLink.nextElementSibling;
+fourthLink.textContent = "Features";
+
+const fifthLink = fourthLink.nextElementSibling;
+fifthLink.textContent = "About";
+
+const sixthLink = fifthLink.nextElementSibling;
+sixthLink.textContent = "Contact";
+
+// //Fill in the h1 element in the cta section
+// const headOne = document.querySelector('h1');
+// headOne.textContent = 'DOM<br> Is<br> Awesome';
+
+// Fill in the button text in the cta section
+const ctaButton = document.querySelector('button');
+ctaButton.textContent = 'Get Started';
+
+// Update cta image
+const ctaImage = document.querySelector('#cta-img');
+ctaImage.setAttribute('src', 'img/header-img.png');
+
+//Fill out all text-content
+// Separate top and bottom content
+const topContent = document.querySelector('.top-content');
+const bottomContent = document.querySelector('.bottom-content');
+//Separate text contents
+const firstTextBox = topContent.querySelector('.text-content:nth-of-type(1)');
+//console.log(firstTextBox);
+const secondTextBox = topContent.querySelector('.text-content:nth-of-type(2)');
+//console.log(secondTextBox);
+const thirdTextBox = bottomContent.querySelector('.text-content:nth-of-type(1)');
+//console.log(thirdTextBox);
+const fourthTextBox = bottomContent.querySelector('.text-content:nth-of-type(2)');
+//console.log(fourthTextBox);
+const fifthTextBox = bottomContent.querySelector('.text-content:nth-of-type(3)');
+//console.log(fifthTextBox);
+
+//Separate the text-content h4's
+const h4FirstCard = firstTextBox.querySelector('h4');
+const h4SecondCard = secondTextBox.querySelector('h4');
+const h4ThirdCard = thirdTextBox.querySelector('h4');
+const h4FourthCard = fourthTextBox.querySelector('h4');
+const h4FifthCard = fifthTextBox.querySelector('h4');
+
+//Separate the text-content p's
+const pFirstCard = firstTextBox.querySelector('p');
+const pSecondCard = secondTextBox.querySelector('p');
+const pThirdCard = thirdTextBox.querySelector('p');
+const pFourthCard = fourthTextBox.querySelector('p');
+const pFifthCard = fifthTextBox.querySelector('p');
+
+//Fill in the h4's
+h4FirstCard.textContent = 'Features';
+h4SecondCard.textContent = 'About';
+h4ThirdCard.textContent = 'Services';
+h4FourthCard.textContent = 'Product';
+h4FifthCard.textContent = 'Vision';
+
+//Fill in the p's
+pFirstCard.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+pSecondCard.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+pThirdCard.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+pFourthCard.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+pFifthCard.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+
